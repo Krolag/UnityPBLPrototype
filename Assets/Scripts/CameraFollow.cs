@@ -5,29 +5,41 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 // Script is responsible for camera movement and both players staing in the viewport
+[RequireComponent(typeof(Camera))]
 public class CameraFollow : MonoBehaviour
 {
-    public GameObject PlayerOne;
-    public GameObject PlayerTwo;
-    public float MinY, MaxY; // Minimal and maximal zoom of the camera (MinY - nearest, MaxY - farthest distance on vertical axis)
-    public float Multiplier; // How fast the zooming will occur
-    private Vector3 pointBetweenPlayers;
-    private float distanceBetweenPlayers;
+    public Transform PlayerOne, PlayerTwo;
+    public Vector3 Offset; // Adds position to the center point
+    public float SmoothAmount; // How smooth camera moves
+    public float MinZoom, MaxZoom; 
+    public float ZoomLimiter; // How fast zoom react
 
-    // Updating position of the camera in the center between both players
+    private Vector3 velocity; // Need for the SmoothDamp function
+    private Camera camera;
+
+    void Start()
+    {
+        camera = GetComponent<Camera>();
+    }
+    
+    // Updating position of the camera in the center between both players and zooming
     void LateUpdate()
     {
-        // Calculating distance between players
-        distanceBetweenPlayers = Mathf.Sqrt(
-            (Mathf.Pow(PlayerTwo.transform.position.x - PlayerOne.transform.position.x, 2))
-            + (Mathf.Pow(PlayerTwo.transform.position.z - PlayerOne.transform.position.z, 2)));
+        // Calculating boundaries around players
+        var bounds = new Bounds(PlayerOne.position, Vector3.zero);
+        bounds.Encapsulate(PlayerTwo.position);
         
-        // Calculating center point and zoom (point on y axis, depends on distance between players)
-        pointBetweenPlayers.x = (PlayerOne.transform.position.x + PlayerTwo.transform.position.x) / 2;
-        pointBetweenPlayers.y = Mathf.Clamp(distanceBetweenPlayers * Multiplier, MinY, MaxY);
-        pointBetweenPlayers.z = (PlayerOne.transform.position.z + PlayerTwo.transform.position.z) / 2;
+        // Moving camera with smooth
+        transform.position = Vector3.SmoothDamp(transform.position, bounds.center + Offset, ref velocity, SmoothAmount);
         
-        // Assigning vector to the camera position
-        transform.position = pointBetweenPlayers;
+        // Calculate distance between players
+        float distance = Mathf.Sqrt(
+            Mathf.Pow(bounds.max.x - bounds.min.x, 2) +
+            Mathf.Pow(bounds.max.z - bounds.min.z, 2));
+        
+        // Zooming the camera dependent on distance
+        camera.fieldOfView = Mathf.Lerp(MinZoom, MaxZoom, distance / ZoomLimiter);
+        
+        // Debug.Log("distance : " + distance); // Testing max distance purposes
     }
 }

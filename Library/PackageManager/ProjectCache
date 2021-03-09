@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637508336881844040
+      ticks: 637508523711098872
     m_Hash: 1548007082
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -341,7 +341,7 @@ m_PackageAssets:
       hasRepository: 1
       repository:
         type: git
-        url: https://github.com/Unity-Technologies/InputSystem.git
+        url: git+https://github.com/Unity-Technologies/InputSystem.git
         revision: 041def76515febb36a83d1f928cfb7aefb85176c
         path: 
     - packageId: com.unity.test-framework@1.1.20
