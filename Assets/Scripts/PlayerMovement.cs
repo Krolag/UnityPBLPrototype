@@ -5,13 +5,29 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
+    [SerializeField] private PlayerInputActions playerInput;
     [SerializeField] private float speed;
+
+    private void Awake()
+    {
+        playerInput = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
 
     private void Update() 
     {
-        float moveForward = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        float moveSide = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        Vector2 moveInput = playerInput.Movement.Move.ReadValue<Vector2>();
 
-        controller.Move(new Vector3(this.transform.position.x + moveForward, this.transform.position.y, this.transform.position.z + moveSide));    
+
+
     }
 }
