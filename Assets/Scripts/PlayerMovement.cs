@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
 
     Vector2 movementInput;
-    Vector2 rotateInput;
 
     private void Awake()
     {
@@ -18,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     #region Unity Events
     public void OnMove(InputAction.CallbackContext ctx) => movementInput = ctx.ReadValue<Vector2>();
-    public void OnRotatate(InputAction.CallbackContext ctx) => rotateInput = ctx.ReadValue<Vector2>();
     #endregion
 
     private void Update()
@@ -26,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 m = new Vector3(movementInput.x, 0, movementInput.y) * Time.deltaTime * speed;
         controller.Move(m);
 
-        Vector3 r = new Vector3(rotateInput.x, 0, rotateInput.y) * 100f * Time.deltaTime;
+        Vector3 r = new Vector3(movementInput.x, 0, movementInput.y) * 100f * Time.deltaTime;
         this.transform.LookAt(transform.position + r);
     }
 
