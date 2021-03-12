@@ -413,7 +413,7 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c81eead4-5620-4e99-aff9-cf57b914ca85
     m_ActionName: Movement/Rotate
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1

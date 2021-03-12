@@ -1,35 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
     [SerializeField] private PlayerInputActions playerInput;
     [SerializeField] private float speed;
 
-    Vector2 move;
-    Vector2 rotate;
+    Vector2 movementInput;
+    Vector2 rotateInput;
 
     private void Awake()
     {
         playerInput = new PlayerInputActions();
     }
 
-    public void OnMove(InputAction.CallbackContext ctx) => move = ctx.ReadValue<Vector2>();
-    public void OnRotatate(InputAction.CallbackContext ctx) => rotate = ctx.ReadValue<Vector2>();
+    #region Unity Events
+    public void OnMove(InputAction.CallbackContext ctx) => movementInput = ctx.ReadValue<Vector2>();
+    public void OnRotatate(InputAction.CallbackContext ctx) => rotateInput = ctx.ReadValue<Vector2>();
+    #endregion
 
     private void Update()
     {
-        Vector3 m = new Vector3(move.x, 0, move.y) * Time.deltaTime * speed;
+        Vector3 m = new Vector3(movementInput.x, 0, movementInput.y) * Time.deltaTime * speed;
         controller.Move(m);
 
-        Vector3 r = new Vector3(rotate.x, 0, rotate.y) * 100f * Time.deltaTime;
+        Vector3 r = new Vector3(rotateInput.x, 0, rotateInput.y) * 100f * Time.deltaTime;
         this.transform.LookAt(transform.position + r);
     }
-
-    
 
     private void OnEnable()
     {
