@@ -15,15 +15,10 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerInput = new PlayerInputActions();
-
-        // Collect movement input
-        playerInput.Movement.Move.performed += ctx => move = ctx.ReadValue<Vector2>();
-        playerInput.Movement.Move.canceled += ctx => move = Vector2.zero;
-
-        // Collect rotation input
-        playerInput.Movement.Rotate.performed += ctx => rotate = ctx.ReadValue<Vector2>();
-        playerInput.Movement.Rotate.canceled += ctx => rotate = Vector2.zero;
     }
+
+    public void OnMove(InputAction.CallbackContext ctx) => move = ctx.ReadValue<Vector2>();
+    public void OnRotatate(InputAction.CallbackContext ctx) => rotate = ctx.ReadValue<Vector2>();
 
     private void Update()
     {
@@ -33,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 r = new Vector3(rotate.x, 0, rotate.y) * 100f * Time.deltaTime;
         this.transform.LookAt(transform.position + r);
     }
+
+    
 
     private void OnEnable()
     {
