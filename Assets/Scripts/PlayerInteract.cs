@@ -1,26 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteract : MonoBehaviour
 {
+    [SerializeField] private InputAction _interactButton;
+
     private float _interactionRange = 1.5f;
+
     void Update()
     {
         Interactable[] interactableObjects = FindObjectsOfType<Interactable>();
 
-        Interactable closest = closestInteractable(interactableObjects).Item1; // find closest object to interact with
-        float distance = closestInteractable(interactableObjects).Item2;    // and distance between object and player
+        Interactable closest = ClosestInteractable(interactableObjects).Item1; // find closest object to interact with
+        float distance = ClosestInteractable(interactableObjects).Item2;    // and distance between object and player
 
         if (distance < _interactionRange)
         {
-            ///TODO button interaction
-            closest.Interact();
+            if (_interactButton.triggered)
+            {
+                closest.Interact();
+            }           
         }
-
+        
     }
 
-    private (Interactable,float) closestInteractable(Interactable[] interactableObjects)
+    private void OnEnable()
+    {
+        _interactButton.Enable();
+    }
+    private void OnDisable()
+    {
+        _interactButton.Disable();
+    }
+
+    private (Interactable,float) ClosestInteractable(Interactable[] interactableObjects)
     {
         float tempDistance = Mathf.Infinity;
         Interactable closestInteractable = null;

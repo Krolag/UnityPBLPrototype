@@ -23,6 +23,9 @@ public class SpriteMagnet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(this.gameObject);        
+        if (other.CompareTag("Player"))
+        {
+            Destroy(this.gameObject);
+        }             
     }
 }

@@ -58,12 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SpriteRotation.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\SpriteMagnet.cs" />
     <Compile Include="Assets\Scripts\PlayerInput.cs" />
-    <Compile Include="Assets\Scripts\ChestInteraction.cs" />
     <Compile Include="Assets\Scripts\BoatInteract.cs" />
-    <Compile Include="Assets\Scripts\PlayerInteract.cs" />
+    <Compile Include="Assets\Scripts\ChestInteraction.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
   </ItemGroup>
   <ItemGroup>
