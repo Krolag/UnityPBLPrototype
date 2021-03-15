@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     public Transform PlayerOne, PlayerTwo, CameraTransform;
     public GameObject LeftCollider, RightCollider, TopCollider, BottomCollider;
     public Vector3 Offset; // Adds position to the center point
+    public Vector2 CameraSpacing;
     public float SmoothAmount; // How smooth camera moves
     public float MinZoom, MaxZoom; 
     public float ZoomLimiter; // How fast zoom react
@@ -32,17 +33,17 @@ public class CameraFollow : MonoBehaviour
         Vector3 cameraTopRight = camera.ViewportToWorldPoint(new Vector3(1.0f, 1.0f, 10.0f));
         
         // Updating scale and position of camera border colliders
-        LeftCollider.transform.position = new Vector3(cameraBottomLeft.x, 0f, cameraCenter.z);
-        LeftCollider.transform.localScale = new Vector3(0.5f, 1f, cameraTopRight.z - cameraBottomLeft.z);
+        LeftCollider.transform.position = new Vector3(cameraBottomLeft.x + CameraSpacing.x, 0f, cameraCenter.z);
+        LeftCollider.transform.localScale = new Vector3(0.3f, 1f, cameraTopRight.z - cameraBottomLeft.z);    
         
-        RightCollider.transform.position = new Vector3(cameraTopRight.x, 0f, cameraCenter.z);
-        RightCollider.transform.localScale = new Vector3(0.5f, 1f, cameraTopRight.z - cameraBottomLeft.z);
+        RightCollider.transform.position = new Vector3(cameraTopRight.x - CameraSpacing.x, 0f, cameraCenter.z);
+        RightCollider.transform.localScale = new Vector3(0.3f, 1f, cameraTopRight.z - cameraBottomLeft.z);
         
-        TopCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraTopRight.z);
-        TopCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.5f);
+        TopCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraTopRight.z - CameraSpacing.y);
+        TopCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.3f);
 
-        BottomCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraBottomLeft.z);
-        BottomCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.5f);
+        BottomCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraBottomLeft.z + CameraSpacing.y);
+        BottomCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.3f);
     }
 
     // Updating position of the camera in the center between both players and zooming

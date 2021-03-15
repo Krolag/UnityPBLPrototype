@@ -377,9 +377,10 @@ MonoBehaviour:
   TopCollider: {fileID: 2123029504}
   BottomCollider: {fileID: 1363961050}
   Offset: {x: 0, y: 10, z: 0}
+  CameraSpacing: {x: 2, y: 2}
   SmoothAmount: 0.3
-  MinZoom: 40
-  MaxZoom: 60
+  MinZoom: 60
+  MaxZoom: 90
   ZoomLimiter: 20
 --- !u!1 &579319614
 GameObject:
