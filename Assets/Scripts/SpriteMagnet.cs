@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpriteMagnet : MonoBehaviour
@@ -17,8 +15,7 @@ public class SpriteMagnet : MonoBehaviour
             {
                 GetComponent<Rigidbody>().AddForce(player.transform.position - transform.position);
             }
-        }
-        
+        }        
     }
 
     private void OnTriggerEnter(Collider other)

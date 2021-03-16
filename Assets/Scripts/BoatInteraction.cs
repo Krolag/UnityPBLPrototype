@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BoatInteract : Interactable
+public class BoatInteraction : Interactable
 {
     public override void Interact()
     {
