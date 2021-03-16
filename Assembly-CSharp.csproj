@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\BoatInteraction.cs" />
     <Compile Include="Assets\Scripts\ChestInteraction.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Points.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

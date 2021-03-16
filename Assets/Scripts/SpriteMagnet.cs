@@ -22,6 +22,7 @@ public class SpriteMagnet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            FindObjectOfType<Points>().AddPoint();
             Destroy(this.gameObject);
         }             
     }
