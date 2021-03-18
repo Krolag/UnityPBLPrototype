@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private InputAction WASD;
+    [SerializeField] private InputAction movementInput;
     private Vector2 movementVector;
 
     public Vector2 MovementVector { get => movementVector; }
@@ -15,15 +15,15 @@ public class PlayerInput : MonoBehaviour
 
     private void OnEnable()
     {
-        WASD.Enable();
+        movementInput.Enable();
     }
     private void OnDisable()
     {
-        WASD.Disable();
+        movementInput.Disable();
     }
 
     private void Update()
     {
-        movementVector = WASD.ReadValue<Vector2>();
+        movementVector = movementInput.ReadValue<Vector2>();
     }
 }

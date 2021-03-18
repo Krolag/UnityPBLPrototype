@@ -23,7 +23,6 @@ public class PlayerInteract : MonoBehaviour
                 closest.Interact();
             }           
         }
-        
     }
 
     private void OnEnable()
