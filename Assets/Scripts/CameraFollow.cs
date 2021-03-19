@@ -28,9 +28,9 @@ public class CameraFollow : MonoBehaviour
     {
         // Viewport to world cords mapping
         // 10 in he third function attribute is the distance between camera and players in the Y axis
-        Vector3 cameraBottomLeft = camera.ViewportToWorldPoint(new Vector3(0.0f, 0.0f, 10.0f));
-        Vector3 cameraCenter = camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 10.0f));
-        Vector3 cameraTopRight = camera.ViewportToWorldPoint(new Vector3(1.0f, 1.0f, 10.0f));
+        Vector3 cameraBottomLeft = camera.ViewportToWorldPoint(new Vector3(0.0f, 0.0f, Offset.y));
+        Vector3 cameraCenter = camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Offset.y));
+        Vector3 cameraTopRight = camera.ViewportToWorldPoint(new Vector3(1.0f, 1.0f, Offset.y));
         
         // Updating scale and position of camera border colliders
         LeftCollider.transform.position = new Vector3(cameraBottomLeft.x + CameraSpacing.x, 0f, cameraCenter.z);
@@ -53,16 +53,16 @@ public class CameraFollow : MonoBehaviour
         var bounds = new Bounds(PlayerOne.position, Vector3.zero);
         bounds.Encapsulate(PlayerTwo.position);
         
-        // Moving camera with smooth
-        CameraTransform.position = Vector3.SmoothDamp(transform.position, bounds.center + Offset, ref velocity, SmoothAmount);
-        
         // Calculate distance between players
         float distance = Mathf.Sqrt(
             Mathf.Pow(bounds.max.x - bounds.min.x, 2) +
             Mathf.Pow(bounds.max.z - bounds.min.z, 2)
-            );
+        );
         
-        // Zooming the camera dependent on distance
-        camera.fieldOfView = Mathf.Lerp(MinZoom, MaxZoom, distance / ZoomLimiter);
+        // Updating camera Y position
+        Offset.y = Mathf.Lerp(MinZoom, MaxZoom, distance / ZoomLimiter);
+        
+        // Moving camera smoothly
+        CameraTransform.position = Vector3.SmoothDamp(transform.position, bounds.center + Offset, ref velocity, SmoothAmount);
     }
 }
