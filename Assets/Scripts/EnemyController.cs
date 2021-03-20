@@ -1,7 +1,5 @@
 // FOR THE TESTING STAGE
 // SHIFT + 1/2 - TEST ATTACK ON PLAYER 1/2
-// C + 1/2 - TEST CHASE ON PLAYER 1/2
-
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -10,23 +8,28 @@ public class EnemyController : MonoBehaviour
 {
     public NavMeshAgent NavMeshAgent;
     public GameObject PlayerOne, PlayerTwo;
+    public float DistanceToEndChase = 1.5f, DistanceToBeginChase = 5f;
     
-    private float distanceToEndChase = 1.5f;
     private int currentlyChasedPlayer = 0; // 0 - none, 1 - one, 2 - two
 
     void Update()
     {
-        // Chasing ( for now only one player can be chased till the end of chase, decide if thats okay)
-        if (currentlyChasedPlayer == 0) // Start chase condition?
+        // Start chasing ( for now only one player can be chased till the end of chase, decide if thats okay)
+        if (currentlyChasedPlayer == 0)
         {
-            if(Keyboard.current.digit1Key.isPressed && Keyboard.current.cKey.isPressed) StartChase(1);
-            else if(Keyboard.current.digit2Key.isPressed && Keyboard.current.cKey.isPressed) StartChase(2);
+            // chase condition is only distance
+            if(DistanceFromPlayer(1) < DistanceToBeginChase) StartChase(1);
+            else if(DistanceFromPlayer(2) < DistanceToBeginChase) StartChase(2);
         }
-        if (currentlyChasedPlayer != 0 && DistanceFromPlayer(currentlyChasedPlayer) < distanceToEndChase) // End chase condition?
+        
+        // End chase if chasing someone and reached target distance
+        if (currentlyChasedPlayer != 0 && DistanceFromPlayer(currentlyChasedPlayer) < DistanceToEndChase)
         {
             EndChase();
         }
-        if (currentlyChasedPlayer != 0) // if not finished chasing then update chase position
+        
+        // If not finished chasing then update chase position
+        if (currentlyChasedPlayer != 0)
         {
             ContinueChase();
         }
@@ -41,18 +44,15 @@ public class EnemyController : MonoBehaviour
     void StartChase(int player)
     {
         currentlyChasedPlayer = player;
-        Debug.Log("STARTED CHASING PLAYER " + currentlyChasedPlayer);
     }
     void ContinueChase()
     {
         if (currentlyChasedPlayer == 1) NavMeshAgent.SetDestination(PlayerOne.transform.position);
         else NavMeshAgent.SetDestination(PlayerTwo.transform.position);
-        Debug.Log("STILL CHASING PLAYER " + currentlyChasedPlayer);
     }
     
     void EndChase()
     {
-        Debug.Log("FINISHED CHASING PLAYER " + currentlyChasedPlayer);
         currentlyChasedPlayer = 0;
     }
 
