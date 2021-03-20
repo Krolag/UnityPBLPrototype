@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class OarInteraction : Interactable
 {
-    [SerializeField] private bool isLeft;
-    [SerializeField] private bool isUsedLeft;
-    [SerializeField] private bool isUsedRight;
+    [SerializeField] private bool isSeating;
     [SerializeField] private Rigidbody rbBoat;
     [SerializeField] private float speed;
     public GameObject[] players;
@@ -14,16 +12,10 @@ public class OarInteraction : Interactable
 
     public override void Interact()
     {
-        if (isLeft)
-        {
-            isUsedLeft = true;
-            Debug.Log("left");
-        }
+        if (isSeating)
+            isSeating = false;
         else
-        {
-            isUsedRight = true;
-            Debug.Log("right");
-        }
+            isSeating = true;
     }
 
     private void Start()
@@ -33,24 +25,15 @@ public class OarInteraction : Interactable
 
     private void Update()
     {
-        if (isUsedLeft && isLeft)
-        {
-            if (Vector3.Distance(players[0].transform.position, seat.transform.position) < Vector3.Distance(players[1].transform.position, seat.transform.position))
-            {
-                players[0].transform.position = seat.transform.position;
-            }
-            else
-            {
-                players[1].transform.position = seat.transform.position;
-            }
-        }
-
-
-        if (isUsedLeft)
-        {
-            Debug.Log("Zajête kurwa nie widzisz");
-        }
+        if (isSeating)
+            AddToSeat();
     }
 
-   
+    private void AddToSeat()
+    {
+        if (Vector3.Distance(players[0].transform.position, seat.transform.position) < Vector3.Distance(players[1].transform.position, seat.transform.position))
+            players[0].transform.position = seat.transform.position;
+        else
+            players[1].transform.position = seat.transform.position;
+    }
 }
