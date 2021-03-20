@@ -54,12 +54,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9524b1ae41768af48882c5536adf9a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSeating: 0
   isLeft: 1
-  isUsedLeft: 0
-  isUsedRight: 0
+  playerID: 0
   rbBoat: {fileID: 1096021996}
   speed: 2
-  players: []
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
   seat: {fileID: 7515620386167521140}
 --- !u!23 &6496376605012476065
 MeshRenderer:
@@ -200,12 +202,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9524b1ae41768af48882c5536adf9a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSeating: 0
   isLeft: 0
-  isUsedLeft: 0
-  isUsedRight: 0
+  playerID: 0
   rbBoat: {fileID: 1096021996}
   speed: 2
-  players: []
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
   seat: {fileID: 3644880996658337905}
 --- !u!23 &1853851644753783193
 MeshRenderer:
@@ -312,7 +316,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!64 &920960175
 MeshCollider:
@@ -328,6 +332,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2232952877369940510, guid: baf58826059e5b444b1b901c5cf8a5d7, type: 3}
+--- !u!65 &3705315061196583018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555003435691772807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0251257, y: 1.8756125, z: 0.19147742}
+  m_Center: {x: 0, y: 2.4007296e-18, z: -0.014114133}
 --- !u!1 &7515620386167521140
 GameObject:
   m_ObjectHideFlags: 0

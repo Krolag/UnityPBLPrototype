@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DragOnMove : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.transform.CompareTag("Player"))
-        {
-            other.transform.SetParent(transform);
+        if (collision.transform.CompareTag("Player"))
+        { 
+            collision.transform.parent = transform;
         }
     }
 }

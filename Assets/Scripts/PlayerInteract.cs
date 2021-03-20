@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private InputAction _interactButton;
+    [SerializeField] private InputAction _rowButton;
 
     private float _interactionRange = 1.5f;
 
@@ -25,13 +26,20 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
+    public InputAction GetRowButton()
+    {
+        return _rowButton;
+    }
+
     private void OnEnable()
     {
         _interactButton.Enable();
+        _rowButton.Enable();
     }
     private void OnDisable()
     {
         _interactButton.Disable();
+        _rowButton.Disable();
     }
 
     private (Interactable,float) ClosestInteractable(Interactable[] interactableObjects)
