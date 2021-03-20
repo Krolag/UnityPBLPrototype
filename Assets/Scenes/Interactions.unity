@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &118174418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3871194351774078741, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
+  m_PrefabInstance: {fileID: 1553326249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &240887854
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,44 +223,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240887854}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &364103313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2106234155851776302, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-  m_PrefabInstance: {fileID: 1553326249}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &364103317 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2106234155851776306, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-  m_PrefabInstance: {fileID: 1553326249}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &364103318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364103313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9750798bab0b8de40abc9712a8ae3d31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactButton:
-    m_Name: Interact Button
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b5abdbf-82d9-459c-8bef-0ba7c29de0a0
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: afa98623-cb61-487d-8691-79947914127e
-      m_Path: <Keyboard>/r
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Interact Button
-      m_Flags: 0
 --- !u!1001 &412412505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -273,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3022298865504271599, guid: 14894b44692929840bfbafe4e4454457, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3022298865504271599, guid: 14894b44692929840bfbafe4e4454457, type: 3}
       propertyPath: m_LocalPosition.x
@@ -460,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7741350114227801055, guid: 4b01eaa0886cd9a4fb3783084f7ae3df, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7741350114227801055, guid: 4b01eaa0886cd9a4fb3783084f7ae3df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -517,7 +484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7741350114227801055, guid: 4b01eaa0886cd9a4fb3783084f7ae3df, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7741350114227801055, guid: 4b01eaa0886cd9a4fb3783084f7ae3df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -927,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2b027e4b9a8fd4cb54057dfb7c207c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerOne: {fileID: 364103317}
+  PlayerOne: {fileID: 118174418}
   PlayerTwo: {fileID: 1002178174}
   CameraTransform: {fileID: 1483779342}
   LeftCollider: {fileID: 1165978635}
