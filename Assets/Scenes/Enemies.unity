@@ -821,8 +821,8 @@ MonoBehaviour:
   Offset: {x: 0, y: 10, z: 0}
   CameraSpacing: {x: 2, y: 2}
   SmoothAmount: 0.3
-  MinZoom: 20
-  MaxZoom: 30
+  MinZoom: 10
+  MaxZoom: 20
   ZoomLimiter: 20
 --- !u!81 &310234049
 AudioListener:
@@ -1066,6 +1066,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378327880}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &387254502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3871194351774078737, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
+  m_PrefabInstance: {fileID: 1541212120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &419750653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,7 +3963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NavMeshAgent: {fileID: 1988766321}
-  PlayerOne: {fileID: 0}
+  PlayerOne: {fileID: 387254502}
   PlayerTwo: {fileID: 272877553}
 --- !u!195 &1988766321
 NavMeshAgent:
