@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Object = System.Object;
 
 public class PlayerCombat : MonoBehaviour
 {
     public Animator LeftPunchAnimator, RightPunchAnimator;
     public float PunchingTime;
-    
+    public float HealthLoss;
+
     private bool isPunching = false;
     private int lastPunch = 1; // 1 - left, 2 - right
     
@@ -22,6 +24,10 @@ public class PlayerCombat : MonoBehaviour
             if (lastPunch == 2 && !isPunching) StartCoroutine(PunchLeft());
         }
 
+        if (health <= 0)
+        {
+            Debug.Log("PLAYER DED");
+        }
     }
 
     IEnumerator PunchLeft()
@@ -44,5 +50,13 @@ public class PlayerCombat : MonoBehaviour
         yield return new WaitForSeconds(PunchingTime);
 
         isPunching = false;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("EnemyFists"))
+        {
+            health -= HealthLoss;
+        }
     }
 }

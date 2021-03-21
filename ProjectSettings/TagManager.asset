@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Boat
-  - Island
+  - Enemy
+  - EnemyFists
+  - PlayerFists
   layers:
   - Default
   - TransparentFX

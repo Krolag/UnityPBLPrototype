@@ -1,6 +1,7 @@
 // FOR THE TESTING STAGE
 // SHIFT + 1/2 - TEST ATTACK ON PLAYER 1/2
 
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -14,7 +15,8 @@ public class EnemyController : MonoBehaviour
     
     public Animator LeftPunchAnimator, RightPunchAnimator;
     public float PunchingTime;
-    
+    public float HealthLoss;
+
     private int currentlyChasedPlayer = 0; // 0 - none, 1 - one, 2 - two
 
     private bool isPunching = false;
@@ -43,6 +45,11 @@ public class EnemyController : MonoBehaviour
         if (currentlyChasedPlayer != 0)
         {
             ContinueChase();
+        }
+        
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
     
@@ -104,5 +111,14 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(PunchingTime);
 
         isPunching = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PlayerFists"))
+        {
+            health -= HealthLoss;
+            Debug.Log("Player hit");
+        }    
     }
 }
