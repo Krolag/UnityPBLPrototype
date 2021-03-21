@@ -346,6 +346,22 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Interact Button
       m_Flags: 0
+  _rowButton:
+    m_Name: Row Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f1d8dae0-f1a5-428f-a467-ac59719b7d1a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7978b162-7c9e-4617-8c05-176a694ee74a
+      m_Path: <Keyboard>/numpadPeriod
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Row Button
+      m_Flags: 0
 --- !u!54 &1626059383
 Rigidbody:
   m_ObjectHideFlags: 0

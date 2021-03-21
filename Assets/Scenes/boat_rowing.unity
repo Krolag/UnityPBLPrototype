@@ -135,30 +135,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1569294318094146664, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-      propertyPath: _rowButton.m_Id
-      value: f1d8dae0-f1a5-428f-a467-ac59719b7d1a
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569294318094146664, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-      propertyPath: _rowButton.m_Name
-      value: Row Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569294318094146664, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569294318094146664, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Id
-      value: eda04146-39d8-4f72-a2f6-229e025f977f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569294318094146664, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <Keyboard>/space
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569294318094146664, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Row Button
-      objectReference: {fileID: 0}
     - target: {fileID: 3871194351774078737, guid: dc6fe71f3327c264a8ab63653cb074c6, type: 3}
       propertyPath: m_Name
       value: PlayerOne
@@ -639,30 +615,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 688807547452716946, guid: 14894b44692929840bfbafe4e4454457, type: 3}
-      propertyPath: _rowButton.m_Id
-      value: f1d8dae0-f1a5-428f-a467-ac59719b7d1a
-      objectReference: {fileID: 0}
-    - target: {fileID: 688807547452716946, guid: 14894b44692929840bfbafe4e4454457, type: 3}
-      propertyPath: _rowButton.m_Name
-      value: Row Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 688807547452716946, guid: 14894b44692929840bfbafe4e4454457, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 688807547452716946, guid: 14894b44692929840bfbafe4e4454457, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Id
-      value: 7978b162-7c9e-4617-8c05-176a694ee74a
-      objectReference: {fileID: 0}
-    - target: {fileID: 688807547452716946, guid: 14894b44692929840bfbafe4e4454457, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <Keyboard>/numpadPeriod
-      objectReference: {fileID: 0}
-    - target: {fileID: 688807547452716946, guid: 14894b44692929840bfbafe4e4454457, type: 3}
-      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Row Button
-      objectReference: {fileID: 0}
     - target: {fileID: 3022298865504271595, guid: 14894b44692929840bfbafe4e4454457, type: 3}
       propertyPath: m_Name
       value: PlayerTwo
@@ -1026,14 +978,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 917458192, guid: d25ecada367a39a4098419487d234fe8, type: 3}
-      propertyPath: force
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 917458192, guid: d25ecada367a39a4098419487d234fe8, type: 3}
-      propertyPath: rotation
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 917458192, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: players.Array.data[0]
       value: 
       objectReference: {fileID: 340371565}
@@ -1041,18 +985,6 @@ PrefabInstance:
       propertyPath: players.Array.data[1]
       value: 
       objectReference: {fileID: 724828549}
-    - target: {fileID: 1096021996, guid: d25ecada367a39a4098419487d234fe8, type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: 1392528077, guid: d25ecada367a39a4098419487d234fe8, type: 3}
-      propertyPath: force
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1392528077, guid: d25ecada367a39a4098419487d234fe8, type: 3}
-      propertyPath: rotation
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 1392528077, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: players.Array.data[0]
       value: 

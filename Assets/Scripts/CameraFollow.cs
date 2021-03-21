@@ -14,10 +14,13 @@ public class CameraFollow : MonoBehaviour
     public Vector2 CameraSpacing;
     public float SmoothAmount; // How smooth camera moves
     public float MinZoom, MaxZoom; 
+    public float currentMinZoom, currentMaxZoom; 
     public float ZoomLimiter; // How fast zoom react
 
     private Vector3 velocity; // Need for the SmoothDamp function
     private Camera camera;
+
+    public OarInteraction oar1, oar2;
 
     void Start()
     {
@@ -26,24 +29,36 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        // Viewport to world cords mapping
-        // 10 in he third function attribute is the distance between camera and players in the Y axis
-        Vector3 cameraBottomLeft = camera.ViewportToWorldPoint(new Vector3(0.0f, 0.0f, Offset.y));
-        Vector3 cameraCenter = camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Offset.y));
-        Vector3 cameraTopRight = camera.ViewportToWorldPoint(new Vector3(1.0f, 1.0f, Offset.y));
-        
-        // Updating scale and position of camera border colliders
-        LeftCollider.transform.position = new Vector3(cameraBottomLeft.x + CameraSpacing.x, 0f, cameraCenter.z);
-        LeftCollider.transform.localScale = new Vector3(0.3f, 1f, cameraTopRight.z - cameraBottomLeft.z);    
-        
-        RightCollider.transform.position = new Vector3(cameraTopRight.x - CameraSpacing.x, 0f, cameraCenter.z);
-        RightCollider.transform.localScale = new Vector3(0.3f, 1f, cameraTopRight.z - cameraBottomLeft.z);
-        
-        TopCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraTopRight.z - CameraSpacing.y);
-        TopCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.3f);
+        // If player is seating behind oar, camera y-position is static
+        if (oar1.GetIsSeating() || oar2.GetIsSeating())
+        {
+            currentMinZoom = 50;
+            currentMaxZoom = 60;
+        }
+        else
+        {
+            currentMinZoom = MinZoom;
+            currentMaxZoom = MaxZoom;
 
-        BottomCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraBottomLeft.z + CameraSpacing.y);
-        BottomCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.3f);
+            // Viewport to world cords mapping
+            // 10 in he third function attribute is the distance between camera and players in the Y axis
+            Vector3 cameraBottomLeft = camera.ViewportToWorldPoint(new Vector3(0.0f, 0.0f, Offset.y));
+            Vector3 cameraCenter = camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Offset.y));
+            Vector3 cameraTopRight = camera.ViewportToWorldPoint(new Vector3(1.0f, 1.0f, Offset.y));
+
+            // Updating scale and position of camera border colliders
+            LeftCollider.transform.position = new Vector3(cameraBottomLeft.x + CameraSpacing.x, 0f, cameraCenter.z);
+            LeftCollider.transform.localScale = new Vector3(0.3f, 1f, cameraTopRight.z - cameraBottomLeft.z);
+
+            RightCollider.transform.position = new Vector3(cameraTopRight.x - CameraSpacing.x, 0f, cameraCenter.z);
+            RightCollider.transform.localScale = new Vector3(0.3f, 1f, cameraTopRight.z - cameraBottomLeft.z);
+
+            TopCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraTopRight.z - CameraSpacing.y);
+            TopCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.3f);
+
+            BottomCollider.transform.position = new Vector3(cameraCenter.x, 0f, cameraBottomLeft.z + CameraSpacing.y);
+            BottomCollider.transform.localScale = new Vector3(cameraTopRight.x - cameraBottomLeft.x, 1f, 0.3f);
+        }
     }
 
     // Updating position of the camera in the center between both players and zooming
@@ -60,7 +75,7 @@ public class CameraFollow : MonoBehaviour
         );
         
         // Updating camera Y position
-        Offset.y = Mathf.Lerp(MinZoom, MaxZoom, distance / ZoomLimiter);
+        Offset.y = Mathf.Lerp(currentMinZoom, currentMaxZoom, distance / ZoomLimiter);
         
         // Moving camera smoothly
         CameraTransform.position = Vector3.SmoothDamp(transform.position, bounds.center + Offset, ref velocity, SmoothAmount);

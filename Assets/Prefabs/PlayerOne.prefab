@@ -316,6 +316,22 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Interact Button
       m_Flags: 0
+  _rowButton:
+    m_Name: Row Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f1d8dae0-f1a5-428f-a467-ac59719b7d1a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: eda04146-39d8-4f72-a2f6-229e025f977f
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Row Button
+      m_Flags: 0
 --- !u!54 &2037986647586838925
 Rigidbody:
   m_ObjectHideFlags: 0

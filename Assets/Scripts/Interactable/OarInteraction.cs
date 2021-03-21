@@ -34,6 +34,11 @@ public class OarInteraction : Interactable
         rbBoat = GetComponentInParent<Rigidbody>();
     }
 
+    public bool GetIsSeating()
+    {
+        return isSeating;
+    }
+
     private void Update()
     {
         Vector3 boatRowMovement = new Vector3();
