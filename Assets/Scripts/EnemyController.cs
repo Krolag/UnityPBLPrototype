@@ -1,5 +1,7 @@
 // FOR THE TESTING STAGE
 // SHIFT + 1/2 - TEST ATTACK ON PLAYER 1/2
+
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -10,8 +12,16 @@ public class EnemyController : MonoBehaviour
     public GameObject PlayerOne, PlayerTwo;
     public float DistanceToEndChase = 1.5f, DistanceToBeginChase = 5f;
     
+    public Animator LeftPunchAnimator, RightPunchAnimator;
+    public float PunchingTime;
+    
     private int currentlyChasedPlayer = 0; // 0 - none, 1 - one, 2 - two
 
+    private bool isPunching = false;
+    private int lastPunch = 1; // 1 - left, 2 - right
+
+    private float health = 100f;
+    
     void Update()
     {
         // Start chasing ( for now only one player can be chased till the end of chase, decide if thats okay)
@@ -26,6 +36,7 @@ public class EnemyController : MonoBehaviour
         if (currentlyChasedPlayer != 0 && DistanceFromPlayer(currentlyChasedPlayer) < DistanceToEndChase)
         {
             EndChase();
+            Attack();
         }
         
         // If not finished chasing then update chase position
@@ -33,11 +44,6 @@ public class EnemyController : MonoBehaviour
         {
             ContinueChase();
         }
-        
-        // Attacking
-        // Attack conditions?
-        if (Keyboard.current.shiftKey.isPressed && Keyboard.current.digit1Key.isPressed) Attack(PlayerOne);
-        if (Keyboard.current.shiftKey.isPressed && Keyboard.current.digit2Key.isPressed) Attack(PlayerTwo);
     }
     
     // Chase methods (names are self explanatory i think)
@@ -70,8 +76,33 @@ public class EnemyController : MonoBehaviour
     }
     
     // Attack method
-    void Attack(GameObject player)
+    void Attack()
     {
-        Debug.Log("Attacking " + player.name);
+        if (!isPunching)
+        {
+            if (lastPunch == 1) StartCoroutine(PunchRight());
+            else StartCoroutine(PunchLeft());
+        }
+    }
+    IEnumerator PunchLeft()
+    {
+        isPunching = true;
+        lastPunch = 1;
+        LeftPunchAnimator.Play("LeftPunch", -1, -0);
+        
+        yield return new WaitForSeconds(PunchingTime);
+
+        isPunching = false;
+    }
+
+    IEnumerator PunchRight()
+    {
+        isPunching = true;
+        lastPunch = 2;
+        RightPunchAnimator.Play("RightPunch", -1, -0);
+        
+        yield return new WaitForSeconds(PunchingTime);
+
+        isPunching = false;
     }
 }
