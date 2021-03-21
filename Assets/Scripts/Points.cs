@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Points : MonoBehaviour
 {
@@ -9,7 +8,8 @@ public class Points : MonoBehaviour
 
     public void AddPoint()
     {
-        _points+=_pointsForItem;
-        Debug.Log("Points: "+_points);
+        _points += _pointsForItem;       
+        GetComponentInChildren<TextMeshProUGUI>().text = _points.ToString();
+
     }
 }
