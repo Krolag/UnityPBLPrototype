@@ -20,8 +20,16 @@ public class KillPlayer : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
+            Destroy(collision.gameObject);
             kill = true;
+            StartCoroutine(EndScreen());
         }
+    }
+
+    IEnumerator EndScreen()
+    {
+        yield return new WaitForSeconds(2);
+        Application.Quit();
     }
 
     private void Start()
@@ -65,18 +73,20 @@ public class KillPlayer : MonoBehaviour
                 else
                     timeLeft = time;
             }
-            if (!kill)
-            {
-                this.transform.position = new Vector3(boat.transform.position.x + xOffset, this.transform.position.y, boat.transform.position.z + zOffset);
-                var mesh = GetComponentInChildren<SkinnedMeshRenderer>();
-                mesh.enabled = false;
-            }
+            
         }
         else
         {
             var mesh = GetComponentInChildren<SkinnedMeshRenderer>();
             mesh.enabled = true;
             this.transform.position += Vector3.up / 3;
+        }
+
+        if (!kill)
+        {
+            this.transform.position = new Vector3(boat.transform.position.x + xOffset, this.transform.position.y, boat.transform.position.z + zOffset);
+            var mesh = GetComponentInChildren<SkinnedMeshRenderer>();
+            mesh.enabled = false;
         }
     }
 }
