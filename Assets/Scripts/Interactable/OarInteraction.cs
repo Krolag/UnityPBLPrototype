@@ -86,8 +86,14 @@ public class OarInteraction : Interactable
                     }
                 }
             }
+            if (movementInput.y == 0)
+            {
+                currentForce = 0;
+                currentRotation = 0;
+            }
         }
 
+        //rbBoat.transform.position +=
         rbBoat.transform.Translate(boatRowMovement * Time.deltaTime);
         rbBoat.transform.Rotate(boatRowRotation * Time.deltaTime);
 

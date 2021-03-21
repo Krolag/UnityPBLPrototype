@@ -24,7 +24,7 @@ public class PlayerMovementNew : MonoBehaviour
 
         Vector3 m = new Vector3(movementInput.x, 0, movementInput.y);
 
-        rigidbody.velocity = new Vector3(m.x * speed, rigidbody.velocity.y * gravity, m.z * speed) * Time.deltaTime;
+        rigidbody.velocity = new Vector3(m.x * speed, -gravity, m.z * speed) * Time.deltaTime;
 
         Vector3 r = new Vector3(movementInput.x, 0, movementInput.y) * 100f * Time.deltaTime;
         this.transform.LookAt(transform.position + r);
