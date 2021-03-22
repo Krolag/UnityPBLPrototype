@@ -18,7 +18,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.fKey.isPressed)
+        if (this.GetComponent<PlayerInteract>().GetRowButton().triggered)
         {
             if (lastPunch == 1 && !isPunching) StartCoroutine(PunchRight());
             if (lastPunch == 2 && !isPunching) StartCoroutine(PunchLeft());

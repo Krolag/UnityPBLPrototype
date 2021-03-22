@@ -11,4 +11,12 @@ public class DragOnMove : MonoBehaviour
             collision.transform.parent = transform;
         }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            collision.transform.parent = null;
+        }
+    }
 }

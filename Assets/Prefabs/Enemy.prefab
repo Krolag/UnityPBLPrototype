@@ -282,8 +282,8 @@ MonoBehaviour:
   NavMeshAgent: {fileID: 7188061006201756764}
   PlayerOne: {fileID: 0}
   PlayerTwo: {fileID: 0}
-  DistanceToEndChase: 1.5
-  DistanceToBeginChase: 5
+  DistanceToEndChase: 4
+  DistanceToBeginChase: 12
   LeftPunchAnimator: {fileID: 7188061005402751378}
   RightPunchAnimator: {fileID: 7188061006433987342}
   PunchingTime: 0.75

@@ -1736,6 +1736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376152780}
+  - component: {fileID: 376152781}
   m_Layer: 0
   m_Name: Island (3)
   m_TagString: Island
@@ -1787,6 +1788,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &376152781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376152779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 53625952af9f88c4cbc33bd775f5d27e, type: 2}
 --- !u!1001 &397973361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2312,6 +2342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521572002}
+  - component: {fileID: 521572003}
   m_Layer: 0
   m_Name: Island (2)
   m_TagString: Island
@@ -2358,6 +2389,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521572003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521572001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 681818fd5796ae94cb139056db81eeba, type: 2}
 --- !u!1 &528360856
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,11 +5622,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2206012205567690777, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
       propertyPath: m_Name
-      value: PlayerOne 1
+      value: PlayerOne
       objectReference: {fileID: 0}
     - target: {fileID: 2206012205567690781, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2206012205567690781, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5607,6 +5667,18 @@ PrefabInstance:
     - target: {fileID: 2206012205567690781, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993576486959367818, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
+      propertyPath: speed
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531512341476246368, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
+      propertyPath: _rowButton.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/b
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531512341476246368, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
+      propertyPath: _interactButton.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/v
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5b8b379227d9f41b04e30300bb39f8, type: 3}
@@ -5972,7 +6044,7 @@ TextMesh:
     num 0 - interact
 
     num . -
-    row'
+    row/hit'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -6460,7 +6532,7 @@ TextMesh:
 
     V - interact
 
-    B - row'
+    B - row/hit'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -6707,13 +6779,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6554642536380392179, guid: aa8f4d18716cc7a47bbdf3eb1b8b5441, type: 3}
+      propertyPath: speed
+      value: 350
+      objectReference: {fileID: 0}
     - target: {fileID: 8288761206828133472, guid: aa8f4d18716cc7a47bbdf3eb1b8b5441, type: 3}
       propertyPath: m_Name
-      value: PlayerTwo 1
+      value: PlayerTwo
       objectReference: {fileID: 0}
     - target: {fileID: 8288761206828133476, guid: aa8f4d18716cc7a47bbdf3eb1b8b5441, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8288761206828133476, guid: aa8f4d18716cc7a47bbdf3eb1b8b5441, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7620,6 +7696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1650969695}
+  - component: {fileID: 1650969696}
   m_Layer: 0
   m_Name: Island (0)
   m_TagString: Island
@@ -7663,6 +7740,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650969696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650969694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: f9d3ddae7f677aa42ac703e6f88ac679, type: 2}
 --- !u!1 &1669429821
 GameObject:
   m_ObjectHideFlags: 0
@@ -7672,6 +7778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1669429822}
+  - component: {fileID: 1669429823}
   m_Layer: 0
   m_Name: Island (1)
   m_TagString: Island
@@ -7718,6 +7825,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669429823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669429821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: b5eaf9f5667b91940bb98a839e6e8f2b, type: 2}
 --- !u!1001 &1672158898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7732,11 +7868,11 @@ PrefabInstance:
     - target: {fileID: 917458192, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: players.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1172628048}
     - target: {fileID: 917458192, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: players.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1418390412}
     - target: {fileID: 1392528077, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: rbBoat
       value: 
@@ -7744,11 +7880,11 @@ PrefabInstance:
     - target: {fileID: 1392528077, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: players.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1172628048}
     - target: {fileID: 1392528077, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: players.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1418390412}
     - target: {fileID: 1628128452748799930, guid: d25ecada367a39a4098419487d234fe8, type: 3}
       propertyPath: m_TagString
       value: Boat
