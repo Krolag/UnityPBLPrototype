@@ -23,7 +23,7 @@ public class Exporter : MonoBehaviour
         public Quaternion Rotation;
         public Vector3 Scale;
         [XmlArray("ChildrenModels")]
-        [XmlArrayItem("ChildrenModel")]
+        [XmlArrayItem("ChildModel")]
         public List<GameModel> ChildGameModel;
 
         public GameModel()
