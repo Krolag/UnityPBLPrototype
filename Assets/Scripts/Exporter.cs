@@ -64,6 +64,7 @@ public class Exporter : MonoBehaviour
         }
     }
     
+    [ContextMenu("export")]
     // Export function will save sml file with the scene hierarchy
     public void Export()
     {
