@@ -22,7 +22,7 @@ public class Exporter : MonoBehaviour
         public Vector3 Position;
         public Quaternion Rotation;
         public Vector3 Scale;
-        public SerializableComponents SerializableComponents;
+        public compo components;
         [XmlArray("ChildrenModels")]
         [XmlArrayItem("ChildModel")]
         public List<GameModel> ChildGameModel;
@@ -38,19 +38,19 @@ public class Exporter : MonoBehaviour
             this.Position = position;
             this.Rotation = rotation;
             this.Scale = scale;
-            this.SerializableComponents = new SerializableComponents();
+            this.components = new compo();
             this.ChildGameModel = new List<GameModel>();
         }
     }
     
-    public class SerializableComponents
+    public class compo
     {
         [SerializeField] public bool isColliderStatic;
         [SerializeField] public bool isInteractable;
         [SerializeField] public bool isTreasure;
         [SerializeField] public bool isCash;
 
-        public SerializableComponents()
+        public compo()
         {
             this.isColliderStatic = true;
             this.isInteractable = false;
@@ -58,7 +58,7 @@ public class Exporter : MonoBehaviour
             this.isCash = false;
         }
         
-        public SerializableComponents(bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash)
+        public compo(bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash)
         {
             this.isColliderStatic = isColliderStatic;
             this.isInteractable = isInteractable;
@@ -123,10 +123,10 @@ public class Exporter : MonoBehaviour
                 );
 
                 // Set serializable contents here @IGNACY
-                gameModel.SerializableComponents.isCash = true;
-                gameModel.SerializableComponents.isColliderStatic = true;
-                gameModel.SerializableComponents.isInteractable = true;
-                gameModel.SerializableComponents.isTreasure = true;
+                gameModel.components.isCash = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isCash;
+                gameModel.components.isColliderStatic = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isColliderStatic;
+                gameModel.components.isInteractable = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isInteractable;
+                gameModel.components.isTreasure = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isTreasure;
 
                 ProcessChildrenOfRootObject(gameObject, gameModel, false);
             }
@@ -207,10 +207,10 @@ public class Exporter : MonoBehaviour
             );
 
             // THE SAME @IGNACY
-            childGameModel.SerializableComponents.isCash = true;
-            childGameModel.SerializableComponents.isTreasure = true;
-            childGameModel.SerializableComponents.isColliderStatic = true;
-            childGameModel.SerializableComponents.isInteractable = true;
+            childGameModel.components.isCash = GameObject.Find(child.name).GetComponent<SerializableComponents>().isCash;
+            childGameModel.components.isTreasure = GameObject.Find(child.name).GetComponent<SerializableComponents>().isTreasure;
+            childGameModel.components.isColliderStatic = GameObject.Find(child.name).GetComponent<SerializableComponents>().isColliderStatic;
+            childGameModel.components.isInteractable = GameObject.Find(child.name).GetComponent<SerializableComponents>().isInteractable;
             
             gameModel.ChildGameModel.Add(childGameModel);
 
