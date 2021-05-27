@@ -40,6 +40,14 @@ public class Exporter : MonoBehaviour
             this.ChildGameModel = new List<GameModel>();
         }
     }
+    
+    public class SerializableComponents : MonoBehaviour
+    {
+        [SerializeField] public bool isColliderStatic;
+        [SerializeField] public bool isInteractable;
+        [SerializeField] public bool isTreasure;
+        [SerializeField] public bool isCash;
+    }
 
     // Preparing container for the Game Objects
     [XmlRoot("GameModelsCollection")]
