@@ -22,6 +22,7 @@ public class Exporter : MonoBehaviour
         public Vector3 Position;
         public Quaternion Rotation;
         public Vector3 Scale;
+        public SerializableComponents SerializableComponents;
         [XmlArray("ChildrenModels")]
         [XmlArrayItem("ChildModel")]
         public List<GameModel> ChildGameModel;
@@ -37,16 +38,33 @@ public class Exporter : MonoBehaviour
             this.Position = position;
             this.Rotation = rotation;
             this.Scale = scale;
+            this.SerializableComponents = new SerializableComponents();
             this.ChildGameModel = new List<GameModel>();
         }
     }
     
-    public class SerializableComponents : MonoBehaviour
+    public class SerializableComponents
     {
         [SerializeField] public bool isColliderStatic;
         [SerializeField] public bool isInteractable;
         [SerializeField] public bool isTreasure;
         [SerializeField] public bool isCash;
+
+        public SerializableComponents()
+        {
+            this.isColliderStatic = true;
+            this.isInteractable = false;
+            this.isTreasure = false;
+            this.isCash = false;
+        }
+        
+        public SerializableComponents(bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash)
+        {
+            this.isColliderStatic = isColliderStatic;
+            this.isInteractable = isInteractable;
+            this.isTreasure = isTreasure;
+            this.isCash = isCash;
+        }
     }
 
     // Preparing container for the Game Objects
@@ -103,7 +121,13 @@ public class Exporter : MonoBehaviour
                     gameObject.transform.rotation,
                     gameObject.transform.localScale
                 );
-                
+
+                // Set serializable contents here @IGNACY
+                gameModel.SerializableComponents.isCash = true;
+                gameModel.SerializableComponents.isColliderStatic = true;
+                gameModel.SerializableComponents.isInteractable = true;
+                gameModel.SerializableComponents.isTreasure = true;
+
                 ProcessChildrenOfRootObject(gameObject, gameModel, false);
             }
         }
@@ -173,7 +197,7 @@ public class Exporter : MonoBehaviour
             origNames.Add(genName);
             int id = GetIDFromName(genName);
             genName += '-' + GetNumberOfModelsNames(genName).ToString();
-        
+
             GameModel childGameModel = new GameModel(
                 genName,
                 id,
@@ -181,6 +205,12 @@ public class Exporter : MonoBehaviour
                 child.transform.localRotation,
                 child.transform.localScale
             );
+
+            // THE SAME @IGNACY
+            childGameModel.SerializableComponents.isCash = true;
+            childGameModel.SerializableComponents.isTreasure = true;
+            childGameModel.SerializableComponents.isColliderStatic = true;
+            childGameModel.SerializableComponents.isInteractable = true;
             
             gameModel.ChildGameModel.Add(childGameModel);
 
