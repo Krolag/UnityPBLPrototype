@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SerializableComponents : MonoBehaviour
 {
+    public bool isColliderOn;
     public bool isColliderStatic;
     public bool isInteractable;
     public bool isTreasure;

@@ -45,6 +45,7 @@ public class Exporter : MonoBehaviour
     
     public class compo
     {
+        [SerializeField] public bool isColliderOn;
         [SerializeField] public bool isColliderStatic;
         [SerializeField] public bool isInteractable;
         [SerializeField] public bool isTreasure;
@@ -52,14 +53,16 @@ public class Exporter : MonoBehaviour
 
         public compo()
         {
+            this.isColliderOn = false;
             this.isColliderStatic = true;
             this.isInteractable = false;
             this.isTreasure = false;
             this.isCash = false;
         }
         
-        public compo(bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash)
+        public compo(bool isColliderOn, bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash)
         {
+            this.isColliderOn = isColliderOn;
             this.isColliderStatic = isColliderStatic;
             this.isInteractable = isInteractable;
             this.isTreasure = isTreasure;
@@ -123,10 +126,20 @@ public class Exporter : MonoBehaviour
                 );
 
                 // Set serializable contents here @IGNACY
-                gameModel.components.isCash = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isCash;
-                gameModel.components.isColliderStatic = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isColliderStatic;
-                gameModel.components.isInteractable = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isInteractable;
-                gameModel.components.isTreasure = GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().isTreasure;
+                gameModel.components.isColliderOn = GameObject.Find(gameObject.name)
+                    .GetComponent<SerializableComponents>().isColliderOn;
+                
+                gameModel.components.isCash = GameObject.Find(gameObject.name)
+                    .GetComponent<SerializableComponents>().isCash;
+                
+                gameModel.components.isColliderStatic = GameObject.Find(gameObject.name)
+                    .GetComponent<SerializableComponents>().isColliderStatic;
+                
+                gameModel.components.isInteractable = GameObject.Find(gameObject.name)
+                    .GetComponent<SerializableComponents>().isInteractable;
+                
+                gameModel.components.isTreasure = GameObject.Find(gameObject.name)
+                    .GetComponent<SerializableComponents>().isTreasure;
 
                 ProcessChildrenOfRootObject(gameObject, gameModel, false);
             }
