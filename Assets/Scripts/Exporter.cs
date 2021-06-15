@@ -50,6 +50,7 @@ public class Exporter : MonoBehaviour
         [SerializeField] public bool isInteractable;
         [SerializeField] public bool isTreasure;
         [SerializeField] public bool isCash;
+        [SerializeField] public bool isEnemy;
 
         public compo()
         {
@@ -58,15 +59,17 @@ public class Exporter : MonoBehaviour
             this.isInteractable = false;
             this.isTreasure = false;
             this.isCash = false;
+            this.isEnemy = false;
         }
         
-        public compo(bool isColliderOn, bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash)
+        public compo(bool isColliderOn, bool isColliderStatic, bool isInteractable, bool isTreasure, bool isCash, bool isEnemy)
         {
             this.isColliderOn = isColliderOn;
             this.isColliderStatic = isColliderStatic;
             this.isInteractable = isInteractable;
             this.isTreasure = isTreasure;
             this.isCash = isCash;
+            this.isEnemy = isEnemy;
         }
     }
 
@@ -140,6 +143,9 @@ public class Exporter : MonoBehaviour
                 
                 gameModel.components.isTreasure = GameObject.Find(gameObject.name)
                     .GetComponent<SerializableComponents>().isTreasure;
+
+                gameModel.components.isEnemy = GameObject.Find(gameObject.name)
+                    .GetComponent<SerializableComponents>().isEnemy;
 
                 ProcessChildrenOfRootObject(gameObject, gameModel, false);
             }
@@ -224,7 +230,8 @@ public class Exporter : MonoBehaviour
             childGameModel.components.isTreasure = GameObject.Find(child.name).GetComponent<SerializableComponents>().isTreasure;
             childGameModel.components.isColliderStatic = GameObject.Find(child.name).GetComponent<SerializableComponents>().isColliderStatic;
             childGameModel.components.isInteractable = GameObject.Find(child.name).GetComponent<SerializableComponents>().isInteractable;
-            
+            childGameModel.components.isEnemy = GameObject.Find(child.name).GetComponent<SerializableComponents>().isEnemy;
+
             gameModel.ChildGameModel.Add(childGameModel);
 
             // Process children

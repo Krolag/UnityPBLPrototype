@@ -9,4 +9,5 @@ public class SerializableComponents : MonoBehaviour
     public bool isInteractable;
     public bool isTreasure;
     public bool isCash;
+    public bool isEnemy;
 }
