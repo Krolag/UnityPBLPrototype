@@ -19,6 +19,7 @@ public class Exporter : MonoBehaviour
     {
         [XmlAttribute("name")] public string Name;
         [XmlAttribute("model_id")] public int ModelID;
+        [XmlAttribute("island_id")] public int IslandID;
         public Vector3 Position;
         public Quaternion Rotation;
         public Vector3 Scale;
@@ -31,10 +32,11 @@ public class Exporter : MonoBehaviour
         {
             
         }
-        public GameModel(string name, int modelID, Vector3 position, Quaternion rotation, Vector3 scale)
+        public GameModel(string name, int modelID, int islandID, Vector3 position, Quaternion rotation, Vector3 scale)
         {
             this.Name = name;
             this.ModelID = modelID;
+            this.IslandID = islandID;
             this.Position = position;
             this.Rotation = rotation;
             this.Scale = scale;
@@ -123,11 +125,12 @@ public class Exporter : MonoBehaviour
                 GameModel gameModel = new GameModel(
                     genName,
                     id,
+                    GameObject.Find(gameObject.name).GetComponent<SerializableComponents>().islandID,
                     gameObject.transform.position,
                     gameObject.transform.rotation,
                     gameObject.transform.localScale
                 );
-
+                
                 // Set serializable contents here @IGNACY
                 gameModel.components.isColliderOn = GameObject.Find(gameObject.name)
                     .GetComponent<SerializableComponents>().isColliderOn;
@@ -220,6 +223,7 @@ public class Exporter : MonoBehaviour
             GameModel childGameModel = new GameModel(
                 genName,
                 id,
+                GameObject.Find(child.name).GetComponent<SerializableComponents>().islandID,
                 child.transform.localPosition,
                 child.transform.localRotation,
                 child.transform.localScale

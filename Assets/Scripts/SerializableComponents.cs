@@ -10,4 +10,5 @@ public class SerializableComponents : MonoBehaviour
     public bool isTreasure;
     public bool isCash;
     public bool isEnemy;
+    public int islandID;
 }
