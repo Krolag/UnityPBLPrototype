@@ -19652,7 +19652,7 @@
     <GameModel name="crashed_boat-3" model_id="612" island_id="0">
       <Position>
         <x>36</x>
-        <y>0.0999999642</y>
+        <y>-0.26</y>
         <z>27.8</z>
       </Position>
       <Rotation>
@@ -19684,7 +19684,7 @@
     <GameModel name="crashed_boat-4" model_id="612" island_id="0">
       <Position>
         <x>11</x>
-        <y>0.3</y>
+        <y>-0.26</y>
         <z>60.88303</z>
       </Position>
       <Rotation>
@@ -19716,7 +19716,7 @@
     <GameModel name="crashed_boat-5" model_id="612" island_id="0">
       <Position>
         <x>55.8</x>
-        <y>0.0999999642</y>
+        <y>-0.26</y>
         <z>58.9</z>
       </Position>
       <Rotation>
@@ -20228,7 +20228,7 @@
     <GameModel name="crashed_boat-6" model_id="612" island_id="0">
       <Position>
         <x>54.5</x>
-        <y>0.0999999642</y>
+        <y>-0.26</y>
         <z>36.3</z>
       </Position>
       <Rotation>
@@ -20260,7 +20260,7 @@
     <GameModel name="crashed_boat-7" model_id="612" island_id="0">
       <Position>
         <x>-1.6</x>
-        <y>0.3</y>
+        <y>-0.26</y>
         <z>87.5</z>
       </Position>
       <Rotation>
@@ -20292,7 +20292,7 @@
     <GameModel name="crashed_boat-8" model_id="612" island_id="0">
       <Position>
         <x>58.6000023</x>
-        <y>0.3</y>
+        <y>-0.26</y>
         <z>85.7000046</z>
       </Position>
       <Rotation>
@@ -20322,38 +20322,6 @@
       <ChildrenModels />
     </GameModel>
     <GameModel name="Plane-1" model_id="635" island_id="1">
-      <Position>
-        <x>68.3</x>
-        <y>0</y>
-        <z>2.036384</z>
-      </Position>
-      <Rotation>
-        <x>0</x>
-        <y>0</y>
-        <z>0</z>
-        <w>1</w>
-        <eulerAngles>
-          <x>-0</x>
-          <y>0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.71</x>
-        <y>1</y>
-        <z>1.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>false</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>false</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="Plane-2" model_id="635" island_id="2">
       <Position>
         <x>64</x>
         <y>0</y>
@@ -20385,7 +20353,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-3" model_id="635" island_id="3">
+    <GameModel name="Plane-2" model_id="635" island_id="2">
       <Position>
         <x>68.1</x>
         <y>0</y>
@@ -20417,7 +20385,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-4" model_id="635" island_id="4">
+    <GameModel name="Plane-3" model_id="635" island_id="3">
       <Position>
         <x>76</x>
         <y>0</y>
@@ -20449,7 +20417,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-5" model_id="635" island_id="5">
+    <GameModel name="Plane-4" model_id="635" island_id="4">
       <Position>
         <x>79.8</x>
         <y>0</y>
@@ -20481,7 +20449,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-6" model_id="635" island_id="6">
+    <GameModel name="Plane-5" model_id="635" island_id="5">
       <Position>
         <x>41.4</x>
         <y>0</y>
@@ -20513,7 +20481,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-7" model_id="635" island_id="7">
+    <GameModel name="Plane-6" model_id="635" island_id="6">
       <Position>
         <x>39.5</x>
         <y>0</y>
@@ -20545,7 +20513,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-8" model_id="635" island_id="8">
+    <GameModel name="Plane-7" model_id="635" island_id="7">
       <Position>
         <x>33.4</x>
         <y>0</y>
@@ -20577,7 +20545,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-9" model_id="635" island_id="9">
+    <GameModel name="Plane-8" model_id="635" island_id="8">
       <Position>
         <x>29.4</x>
         <y>0</y>
@@ -20609,7 +20577,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-10" model_id="635" island_id="10">
+    <GameModel name="Plane-9" model_id="635" island_id="9">
       <Position>
         <x>25.4</x>
         <y>0</y>
@@ -20641,7 +20609,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-11" model_id="635" island_id="11">
+    <GameModel name="Plane-10" model_id="635" island_id="10">
       <Position>
         <x>19.4</x>
         <y>0</y>
@@ -20673,7 +20641,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-12" model_id="635" island_id="12">
+    <GameModel name="Plane-11" model_id="635" island_id="11">
       <Position>
         <x>17.4</x>
         <y>0</y>
@@ -20705,7 +20673,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-13" model_id="635" island_id="13">
+    <GameModel name="Plane-12" model_id="635" island_id="12">
       <Position>
         <x>21.4</x>
         <y>0</y>
@@ -20737,39 +20705,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-14" model_id="635" island_id="14">
-      <Position>
-        <x>21.4</x>
-        <y>0</y>
-        <z>96.7000046</z>
-      </Position>
-      <Rotation>
-        <x>0</x>
-        <y>0</y>
-        <z>0</z>
-        <w>1</w>
-        <eulerAngles>
-          <x>-0</x>
-          <y>0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.38</x>
-        <y>1</y>
-        <z>0.36</z>
-      </Scale>
-      <components>
-        <isColliderOn>false</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>false</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="Plane-15" model_id="635" island_id="15">
+    <GameModel name="Plane-13" model_id="635" island_id="13">
       <Position>
         <x>27.4</x>
         <y>0</y>
@@ -20801,7 +20737,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-16" model_id="635" island_id="16">
+    <GameModel name="Plane-14" model_id="635" island_id="14">
       <Position>
         <x>33.4</x>
         <y>0</y>
@@ -20833,7 +20769,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-17" model_id="635" island_id="17">
+    <GameModel name="Plane-15" model_id="635" island_id="15">
       <Position>
         <x>-4</x>
         <y>0</y>
@@ -20865,7 +20801,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-18" model_id="635" island_id="18">
+    <GameModel name="Plane-16" model_id="635" island_id="16">
       <Position>
         <x>-4</x>
         <y>0</y>
@@ -20897,7 +20833,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-19" model_id="635" island_id="19">
+    <GameModel name="Plane-17" model_id="635" island_id="17">
       <Position>
         <x>-12</x>
         <y>0</y>
@@ -20929,7 +20865,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-20" model_id="635" island_id="20">
+    <GameModel name="Plane-18" model_id="635" island_id="18">
       <Position>
         <x>-14</x>
         <y>0</y>
@@ -20961,7 +20897,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-21" model_id="635" island_id="21">
+    <GameModel name="Plane-19" model_id="635" island_id="19">
       <Position>
         <x>-14</x>
         <y>0</y>
@@ -20993,7 +20929,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-22" model_id="635" island_id="22">
+    <GameModel name="Plane-20" model_id="635" island_id="20">
       <Position>
         <x>-4</x>
         <y>0</y>
@@ -21025,7 +20961,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-23" model_id="635" island_id="23">
+    <GameModel name="Plane-21" model_id="635" island_id="21">
       <Position>
         <x>4</x>
         <y>0</y>
@@ -21057,7 +20993,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-24" model_id="635" island_id="24">
+    <GameModel name="Plane-22" model_id="635" island_id="22">
       <Position>
         <x>6</x>
         <y>0</y>
@@ -21089,7 +21025,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="Plane-25" model_id="635" island_id="25">
+    <GameModel name="Plane-23" model_id="635" island_id="23">
       <Position>
         <x>8</x>
         <y>0</y>
@@ -21121,39 +21057,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-1" model_id="660" island_id="1">
-      <Position>
-        <x>68.9</x>
-        <y>0.501999855</y>
-        <z>-0.799999237</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-2" model_id="660" island_id="2">
+    <GameModel name="locals_01-1" model_id="658" island_id="1">
       <Position>
         <x>64.6</x>
         <y>0.501999855</y>
@@ -21185,39 +21089,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-3" model_id="660" island_id="3">
-      <Position>
-        <x>68.37201</x>
-        <y>0.501999855</y>
-        <z>45.9</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-4" model_id="660" island_id="4">
+    <GameModel name="locals_01-2" model_id="658" island_id="3">
       <Position>
         <x>76.6720047</x>
         <y>0.501999855</y>
@@ -21249,39 +21121,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-5" model_id="660" island_id="4">
-      <Position>
-        <x>76.4</x>
-        <y>0.501999855</y>
-        <z>46.8000031</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-6" model_id="660" island_id="6">
+    <GameModel name="locals_01-3" model_id="658" island_id="5">
       <Position>
         <x>41.6740036</x>
         <y>0.501999855</y>
@@ -21313,7 +21153,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-7" model_id="660" island_id="6">
+    <GameModel name="locals_01-4" model_id="658" island_id="5">
       <Position>
         <x>41.5</x>
         <y>0.501999855</y>
@@ -21345,7 +21185,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-8" model_id="660" island_id="7">
+    <GameModel name="locals_01-5" model_id="658" island_id="6">
       <Position>
         <x>41.5</x>
         <y>0.501999855</y>
@@ -21377,7 +21217,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-9" model_id="660" island_id="7">
+    <GameModel name="locals_01-6" model_id="658" island_id="6">
       <Position>
         <x>37.6000023</x>
         <y>0.501999855</y>
@@ -21409,39 +21249,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-10" model_id="660" island_id="8">
-      <Position>
-        <x>33.9</x>
-        <y>0.501999855</y>
-        <z>73.2000046</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-11" model_id="660" island_id="9">
+    <GameModel name="locals_01-7" model_id="658" island_id="8">
       <Position>
         <x>30</x>
         <y>0.501999855</y>
@@ -21473,7 +21281,39 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-12" model_id="660" island_id="10">
+    <GameModel name="locals_01-8" model_id="658" island_id="7">
+      <Position>
+        <x>33.9</x>
+        <y>0.501999855</y>
+        <z>73.2000046</z>
+      </Position>
+      <Rotation>
+        <x>-0.7071068</x>
+        <y>-0</y>
+        <z>-0</z>
+        <w>0.7071067</w>
+        <eulerAngles>
+          <x>270.019775</x>
+          <y>-0</y>
+          <z>0</z>
+        </eulerAngles>
+      </Rotation>
+      <Scale>
+        <x>0.5</x>
+        <y>0.49999994</y>
+        <z>0.49999994</z>
+      </Scale>
+      <components>
+        <isColliderOn>true</isColliderOn>
+        <isColliderStatic>false</isColliderStatic>
+        <isInteractable>false</isInteractable>
+        <isTreasure>false</isTreasure>
+        <isCash>false</isCash>
+        <isEnemy>true</isEnemy>
+      </components>
+      <ChildrenModels />
+    </GameModel>
+    <GameModel name="locals_01-9" model_id="658" island_id="9">
       <Position>
         <x>25.7</x>
         <y>0.501999855</y>
@@ -21505,39 +21345,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-13" model_id="660" island_id="11">
-      <Position>
-        <x>20.5</x>
-        <y>0.501999855</y>
-        <z>77.2000046</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-14" model_id="660" island_id="11">
+    <GameModel name="locals_01-10" model_id="658" island_id="10">
       <Position>
         <x>16.5</x>
         <y>0.501999855</y>
@@ -21569,7 +21377,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-15" model_id="660" island_id="12">
+    <GameModel name="locals_01-11" model_id="658" island_id="11">
       <Position>
         <x>17.8000031</x>
         <y>0.501999855</y>
@@ -21601,39 +21409,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-16" model_id="660" island_id="12">
-      <Position>
-        <x>16</x>
-        <y>0.501999855</y>
-        <z>90.4</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-17" model_id="660" island_id="13">
+    <GameModel name="locals_01-12" model_id="658" island_id="12">
       <Position>
         <x>22.4</x>
         <y>0.501999855</y>
@@ -21665,103 +21441,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-18" model_id="660" island_id="14">
-      <Position>
-        <x>20.4</x>
-        <y>0.501999855</y>
-        <z>97.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-19" model_id="660" island_id="15">
-      <Position>
-        <x>30</x>
-        <y>0.501999855</y>
-        <z>85.1</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-20" model_id="660" island_id="16">
-      <Position>
-        <x>33.2</x>
-        <y>0.501999855</y>
-        <z>90</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-21" model_id="660" island_id="17">
+    <GameModel name="locals_01-13" model_id="658" island_id="15">
       <Position>
         <x>-3.79999924</x>
         <y>0.501999855</y>
@@ -21793,7 +21473,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-22" model_id="660" island_id="17">
+    <GameModel name="locals_01-14" model_id="658" island_id="15">
       <Position>
         <x>-10.4000015</x>
         <y>0.501999855</y>
@@ -21825,7 +21505,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-23" model_id="660" island_id="18">
+    <GameModel name="locals_01-15" model_id="658" island_id="16">
       <Position>
         <x>-4.90000153</x>
         <y>0.501999855</y>
@@ -21857,7 +21537,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-24" model_id="660" island_id="18">
+    <GameModel name="locals_01-16" model_id="658" island_id="16">
       <Position>
         <x>-2</x>
         <y>0.501999855</y>
@@ -21889,7 +21569,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-25" model_id="660" island_id="19">
+    <GameModel name="locals_01-17" model_id="658" island_id="17">
       <Position>
         <x>-9.700001</x>
         <y>0.501999855</y>
@@ -21921,7 +21601,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-26" model_id="660" island_id="20">
+    <GameModel name="locals_01-18" model_id="658" island_id="18">
       <Position>
         <x>-15.2000046</x>
         <y>0.501999855</y>
@@ -21953,7 +21633,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-27" model_id="660" island_id="22">
+    <GameModel name="locals_01-19" model_id="658" island_id="20">
       <Position>
         <x>-2</x>
         <y>0.501999855</y>
@@ -21985,39 +21665,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-28" model_id="660" island_id="22">
-      <Position>
-        <x>-6.5</x>
-        <y>0.501999855</y>
-        <z>30</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_01-29" model_id="660" island_id="23">
+    <GameModel name="locals_01-20" model_id="658" island_id="21">
       <Position>
         <x>2.20000076</x>
         <y>0.501999855</y>
@@ -22049,7 +21697,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_01-30" model_id="660" island_id="24">
+    <GameModel name="locals_01-21" model_id="658" island_id="22">
       <Position>
         <x>5.40000153</x>
         <y>0.501999855</y>
@@ -22081,167 +21729,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-1" model_id="690" island_id="1">
-      <Position>
-        <x>68.126</x>
-        <y>0.5</y>
-        <z>-2.20000076</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-2" model_id="690" island_id="2">
-      <Position>
-        <x>63.8259964</x>
-        <y>0.5</y>
-        <z>38.3</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-3" model_id="690" island_id="3">
-      <Position>
-        <x>67.59801</x>
-        <y>0.5</y>
-        <z>44.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-4" model_id="690" island_id="4">
-      <Position>
-        <x>75.898</x>
-        <y>0.5</y>
-        <z>36.9</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-5" model_id="690" island_id="4">
-      <Position>
-        <x>75.626</x>
-        <y>0.5</y>
-        <z>45.4</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-6" model_id="690" island_id="6">
+    <GameModel name="locals_00-1" model_id="679" island_id="5">
       <Position>
         <x>40.9</x>
         <y>0.5</y>
@@ -22273,7 +21761,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-7" model_id="690" island_id="6">
+    <GameModel name="locals_00-2" model_id="679" island_id="5">
       <Position>
         <x>40.7259979</x>
         <y>0.5</y>
@@ -22305,103 +21793,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-8" model_id="690" island_id="7">
-      <Position>
-        <x>40.7259979</x>
-        <y>0.5</y>
-        <z>75.7</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-9" model_id="690" island_id="7">
-      <Position>
-        <x>36.826</x>
-        <y>0.5</y>
-        <z>75.7</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-10" model_id="690" island_id="8">
-      <Position>
-        <x>33.4</x>
-        <y>0.5</y>
-        <z>72.3</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-11" model_id="690" island_id="9">
+    <GameModel name="locals_00-3" model_id="679" island_id="8">
       <Position>
         <x>29.5</x>
         <y>0.5</y>
@@ -22433,7 +21825,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-12" model_id="690" island_id="10">
+    <GameModel name="locals_00-4" model_id="679" island_id="9">
       <Position>
         <x>25.2</x>
         <y>0.5</y>
@@ -22465,71 +21857,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-13" model_id="690" island_id="11">
-      <Position>
-        <x>20</x>
-        <y>0.5</y>
-        <z>76.3</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-14" model_id="690" island_id="11">
-      <Position>
-        <x>19.8000031</x>
-        <y>0.5</y>
-        <z>75</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-15" model_id="690" island_id="12">
+    <GameModel name="locals_00-5" model_id="679" island_id="12">
       <Position>
         <x>16.4000015</x>
         <y>0.5</y>
@@ -22561,135 +21889,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-16" model_id="690" island_id="12">
-      <Position>
-        <x>17</x>
-        <y>0.5</y>
-        <z>88.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-17" model_id="690" island_id="13">
-      <Position>
-        <x>23.4</x>
-        <y>0.5</y>
-        <z>91.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-18" model_id="690" island_id="14">
-      <Position>
-        <x>21.4</x>
-        <y>0.5</y>
-        <z>95.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-19" model_id="690" island_id="15">
-      <Position>
-        <x>31</x>
-        <y>0.5</y>
-        <z>83.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-20" model_id="690" island_id="16">
+    <GameModel name="locals_00-6" model_id="679" island_id="14">
       <Position>
         <x>34.2</x>
         <y>0.5</y>
@@ -22721,39 +21921,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-21" model_id="690" island_id="17">
-      <Position>
-        <x>-2.79999924</x>
-        <y>0.5</y>
-        <z>49.1</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-22" model_id="690" island_id="17">
+    <GameModel name="locals_00-7" model_id="679" island_id="15">
       <Position>
         <x>-9.400002</x>
         <y>0.5</y>
@@ -22785,103 +21953,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-23" model_id="690" island_id="18">
-      <Position>
-        <x>-3.90000153</x>
-        <y>0.5</y>
-        <z>43.4</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-24" model_id="690" island_id="18">
-      <Position>
-        <x>-1</x>
-        <y>0.5</y>
-        <z>42.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-25" model_id="690" island_id="19">
-      <Position>
-        <x>-8.700001</x>
-        <y>0.5</y>
-        <z>38.3</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-26" model_id="690" island_id="20">
+    <GameModel name="locals_00-8" model_id="679" island_id="18">
       <Position>
         <x>-14.2000046</x>
         <y>0.5</y>
@@ -22913,7 +21985,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-27" model_id="690" island_id="22">
+    <GameModel name="locals_00-9" model_id="679" island_id="20">
       <Position>
         <x>-1</x>
         <y>0.5</y>
@@ -22945,7 +22017,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-28" model_id="690" island_id="22">
+    <GameModel name="locals_00-10" model_id="679" island_id="20">
       <Position>
         <x>-5.5</x>
         <y>0.5</y>
@@ -22977,39 +22049,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_00-29" model_id="690" island_id="23">
-      <Position>
-        <x>3.20000076</x>
-        <y>0.5</y>
-        <z>38.7999954</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071068</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270.019775</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.5</x>
-        <y>0.49999994</y>
-        <z>0.49999994</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_00-30" model_id="690" island_id="24">
+    <GameModel name="locals_00-11" model_id="679" island_id="22">
       <Position>
         <x>6.40000153</x>
         <y>0.5</y>
@@ -23041,71 +22081,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-1" model_id="720" island_id="1">
-      <Position>
-        <x>67.3279953</x>
-        <y>0.5170002</y>
-        <z>3.10000038</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-2" model_id="720" island_id="2">
-      <Position>
-        <x>63.0279922</x>
-        <y>0.5170002</y>
-        <z>43.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-3" model_id="720" island_id="3">
+    <GameModel name="locals_max_00-1" model_id="690" island_id="2">
       <Position>
         <x>66.8</x>
         <y>0.5170002</y>
@@ -23137,39 +22113,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-4" model_id="720" island_id="4">
-      <Position>
-        <x>75.1</x>
-        <y>0.5170002</y>
-        <z>42.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-5" model_id="720" island_id="4">
+    <GameModel name="locals_max_00-2" model_id="690" island_id="4">
       <Position>
         <x>74.8279953</x>
         <y>0.5170002</y>
@@ -23201,7 +22145,39 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-6" model_id="720" island_id="5">
+    <GameModel name="locals_max_00-3" model_id="690" island_id="3">
+      <Position>
+        <x>75.1</x>
+        <y>0.5170002</y>
+        <z>42.2</z>
+      </Position>
+      <Rotation>
+        <x>-0.7071069</x>
+        <y>-0</y>
+        <z>-0</z>
+        <w>0.7071067</w>
+        <eulerAngles>
+          <x>270</x>
+          <y>-0</y>
+          <z>0</z>
+        </eulerAngles>
+      </Rotation>
+      <Scale>
+        <x>0.14</x>
+        <y>0.14</y>
+        <z>0.14</z>
+      </Scale>
+      <components>
+        <isColliderOn>true</isColliderOn>
+        <isColliderStatic>false</isColliderStatic>
+        <isInteractable>false</isInteractable>
+        <isTreasure>false</isTreasure>
+        <isCash>false</isCash>
+        <isEnemy>true</isEnemy>
+      </components>
+      <ChildrenModels />
+    </GameModel>
+    <GameModel name="locals_max_00-4" model_id="690" island_id="4">
       <Position>
         <x>79</x>
         <y>0.5170002</y>
@@ -23233,7 +22209,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-7" model_id="720" island_id="6">
+    <GameModel name="locals_max_00-5" model_id="690" island_id="6">
       <Position>
         <x>40.328</x>
         <y>0.5170002</y>
@@ -23265,39 +22241,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-8" model_id="720" island_id="6">
-      <Position>
-        <x>40.1539955</x>
-        <y>0.5170002</y>
-        <z>82</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-9" model_id="720" island_id="7">
+    <GameModel name="locals_max_00-6" model_id="690" island_id="6">
       <Position>
         <x>40.1539955</x>
         <y>0.5170002</y>
@@ -23329,135 +22273,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-10" model_id="720" island_id="7">
-      <Position>
-        <x>36.2539978</x>
-        <y>0.5170002</y>
-        <z>72.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-11" model_id="720" island_id="8">
-      <Position>
-        <x>33.2</x>
-        <y>0.5170002</y>
-        <z>67.4</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-12" model_id="720" island_id="9">
-      <Position>
-        <x>29.3</x>
-        <y>0.5170002</y>
-        <z>72.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-13" model_id="720" island_id="11">
-      <Position>
-        <x>19.8</x>
-        <y>0.5170002</y>
-        <z>71.4</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-14" model_id="720" island_id="11">
+    <GameModel name="locals_max_00-7" model_id="690" island_id="10">
       <Position>
         <x>18.5999985</x>
         <y>0.5170002</y>
@@ -23489,7 +22305,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-15" model_id="720" island_id="12">
+    <GameModel name="locals_max_00-8" model_id="690" island_id="11">
       <Position>
         <x>17.0999985</x>
         <y>0.5170002</y>
@@ -23521,39 +22337,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-16" model_id="720" island_id="12">
-      <Position>
-        <x>18.7</x>
-        <y>0.5170002</y>
-        <z>83.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-17" model_id="720" island_id="13">
+    <GameModel name="locals_max_00-9" model_id="690" island_id="12">
       <Position>
         <x>18.7</x>
         <y>0.5170002</y>
@@ -23585,7 +22369,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-18" model_id="720" island_id="15">
+    <GameModel name="locals_max_00-10" model_id="690" island_id="13">
       <Position>
         <x>26.3000011</x>
         <y>0.5170002</y>
@@ -23617,7 +22401,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-19" model_id="720" island_id="16">
+    <GameModel name="locals_max_00-11" model_id="690" island_id="14">
       <Position>
         <x>33.5</x>
         <y>0.5170002</y>
@@ -23649,135 +22433,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-20" model_id="720" island_id="17">
-      <Position>
-        <x>1.10000229</x>
-        <y>0.5170002</y>
-        <z>46.3999977</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-21" model_id="720" island_id="17">
-      <Position>
-        <x>-5.5</x>
-        <y>0.5170002</y>
-        <z>46.3999977</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-22" model_id="720" island_id="18">
-      <Position>
-        <x>-6.59999847</x>
-        <y>0.5170002</y>
-        <z>40.7</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-23" model_id="720" island_id="18">
-      <Position>
-        <x>-3.70000076</x>
-        <y>0.5170002</y>
-        <z>39.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-24" model_id="720" island_id="19">
+    <GameModel name="locals_max_00-12" model_id="690" island_id="17">
       <Position>
         <x>-13.1999969</x>
         <y>0.5170002</y>
@@ -23809,7 +22465,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-25" model_id="720" island_id="21">
+    <GameModel name="locals_max_00-13" model_id="690" island_id="19">
       <Position>
         <x>-14.3000031</x>
         <y>0.5170002</y>
@@ -23841,7 +22497,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-26" model_id="720" island_id="22">
+    <GameModel name="locals_max_00-14" model_id="690" island_id="20">
       <Position>
         <x>-3.699997</x>
         <y>0.5170002</y>
@@ -23873,71 +22529,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-27" model_id="720" island_id="22">
-      <Position>
-        <x>-0.799999237</x>
-        <y>0.5170002</y>
-        <z>27.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-28" model_id="720" island_id="23">
-      <Position>
-        <x>5.90000153</x>
-        <y>0.5170002</y>
-        <z>38.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.14</x>
-        <y>0.14</y>
-        <z>0.14</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_00-29" model_id="720" island_id="25">
+    <GameModel name="locals_max_00-15" model_id="690" island_id="23">
       <Position>
         <x>4.90000153</x>
         <y>0.5170002</y>
@@ -23969,7 +22561,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_00-30" model_id="720" island_id="25">
+    <GameModel name="locals_max_00-16" model_id="690" island_id="23">
       <Position>
         <x>11</x>
         <y>0.5170002</y>
@@ -24001,199 +22593,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-1" model_id="750" island_id="1">
-      <Position>
-        <x>69.6</x>
-        <y>0.493000031</y>
-        <z>5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-2" model_id="750" island_id="2">
-      <Position>
-        <x>65.2999954</x>
-        <y>0.493000031</y>
-        <z>45.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-3" model_id="750" island_id="3">
-      <Position>
-        <x>69.07201</x>
-        <y>0.493000031</y>
-        <z>49.5</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-4" model_id="750" island_id="4">
-      <Position>
-        <x>77.372</x>
-        <y>0.493000031</y>
-        <z>41.9</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-5" model_id="750" island_id="4">
-      <Position>
-        <x>77.1</x>
-        <y>0.493000031</y>
-        <z>50.4</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-6" model_id="750" island_id="5">
-      <Position>
-        <x>81.272</x>
-        <y>0.493000031</y>
-        <z>45.6000023</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-7" model_id="750" island_id="6">
+    <GameModel name="locals_max_01-1" model_id="706" island_id="5">
       <Position>
         <x>42.6000023</x>
         <y>0.493000031</y>
@@ -24225,167 +22625,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-8" model_id="750" island_id="6">
-      <Position>
-        <x>42.426</x>
-        <y>0.493000031</y>
-        <z>81.7</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-9" model_id="750" island_id="7">
-      <Position>
-        <x>42.426</x>
-        <y>0.493000031</y>
-        <z>72.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-10" model_id="750" island_id="7">
-      <Position>
-        <x>38.526</x>
-        <y>0.493000031</y>
-        <z>72.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-11" model_id="750" island_id="8">
-      <Position>
-        <x>34.4</x>
-        <y>0.493000031</y>
-        <z>68.8</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-12" model_id="750" island_id="9">
-      <Position>
-        <x>30.5</x>
-        <y>0.493000031</y>
-        <z>73.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-13" model_id="750" island_id="11">
+    <GameModel name="locals_max_01-2" model_id="706" island_id="10">
       <Position>
         <x>21</x>
         <y>0.493000031</y>
@@ -24417,7 +22657,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-14" model_id="750" island_id="11">
+    <GameModel name="locals_max_01-3" model_id="706" island_id="10">
       <Position>
         <x>16.3000031</x>
         <y>0.493000031</y>
@@ -24449,39 +22689,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-15" model_id="750" island_id="12">
-      <Position>
-        <x>16.2</x>
-        <y>0.493000031</y>
-        <z>84</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-16" model_id="750" island_id="12">
+    <GameModel name="locals_max_01-4" model_id="706" island_id="11">
       <Position>
         <x>18.7</x>
         <y>0.493000031</y>
@@ -24513,7 +22721,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-17" model_id="750" island_id="13">
+    <GameModel name="locals_max_01-5" model_id="706" island_id="12">
       <Position>
         <x>18.7</x>
         <y>0.493000031</y>
@@ -24545,39 +22753,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-18" model_id="750" island_id="15">
-      <Position>
-        <x>26.3000011</x>
-        <y>0.493000031</y>
-        <z>85.6</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-19" model_id="750" island_id="16">
+    <GameModel name="locals_max_01-6" model_id="706" island_id="14">
       <Position>
         <x>33.5</x>
         <y>0.493000031</y>
@@ -24609,71 +22785,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-20" model_id="750" island_id="17">
-      <Position>
-        <x>1.09999847</x>
-        <y>0.493000031</y>
-        <z>48.7</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-21" model_id="750" island_id="17">
-      <Position>
-        <x>-5.5</x>
-        <y>0.493000031</y>
-        <z>48.7</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-22" model_id="750" island_id="18">
+    <GameModel name="locals_max_01-7" model_id="706" island_id="16">
       <Position>
         <x>-6.59999847</x>
         <y>0.493000031</y>
@@ -24705,7 +22817,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-23" model_id="750" island_id="18">
+    <GameModel name="locals_max_01-8" model_id="706" island_id="16">
       <Position>
         <x>-3.70000076</x>
         <y>0.493000031</y>
@@ -24737,135 +22849,7 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-24" model_id="750" island_id="19">
-      <Position>
-        <x>-11.4000015</x>
-        <y>0.493000031</y>
-        <z>38.2</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-25" model_id="750" island_id="21">
-      <Position>
-        <x>-12.5</x>
-        <y>0.493000031</y>
-        <z>26.7000027</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-26" model_id="750" island_id="22">
-      <Position>
-        <x>-3.70000076</x>
-        <y>0.493000031</y>
-        <z>31.1000042</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-27" model_id="750" island_id="22">
-      <Position>
-        <x>-0.800003052</x>
-        <y>0.493000031</y>
-        <z>29.9000034</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-28" model_id="750" island_id="23">
+    <GameModel name="locals_max_01-9" model_id="706" island_id="21">
       <Position>
         <x>5.90000153</x>
         <y>0.493000031</y>
@@ -24897,41 +22881,9 @@
       </components>
       <ChildrenModels />
     </GameModel>
-    <GameModel name="locals_max_01-29" model_id="750" island_id="25">
+    <GameModel name="locals_max_01-10" model_id="706" island_id="23">
       <Position>
         <x>4.89999771</x>
-        <y>0.493000031</y>
-        <z>26.3000031</z>
-      </Position>
-      <Rotation>
-        <x>-0.7071069</x>
-        <y>-0</y>
-        <z>-0</z>
-        <w>0.7071067</w>
-        <eulerAngles>
-          <x>270</x>
-          <y>-0</y>
-          <z>0</z>
-        </eulerAngles>
-      </Rotation>
-      <Scale>
-        <x>0.12</x>
-        <y>0.12</y>
-        <z>0.12</z>
-      </Scale>
-      <components>
-        <isColliderOn>true</isColliderOn>
-        <isColliderStatic>false</isColliderStatic>
-        <isInteractable>false</isInteractable>
-        <isTreasure>false</isTreasure>
-        <isCash>false</isCash>
-        <isEnemy>true</isEnemy>
-      </components>
-      <ChildrenModels />
-    </GameModel>
-    <GameModel name="locals_max_01-30" model_id="750" island_id="25">
-      <Position>
-        <x>11</x>
         <y>0.493000031</y>
         <z>26.3000031</z>
       </Position>
